@@ -13,8 +13,6 @@ namespace BCWSnapin
     internal class facehelper
     {
         private readonly IFaceServiceClient faceServiceClient = null;
-        Face[] faces;                   // The list of detected faces.
-        String[] faceDescriptions;      // The list of descriptions for the detected faces.
         double resizeFactor;
         internal facehelper(string apikey)
         {
@@ -40,21 +38,25 @@ namespace BCWSnapin
             // Call the Face API.
             try
             {
-                using (Stream imageFileStream = File.OpenRead(imageFilePath))
+                Face[] faces = null;
+                while (faces == null || faces.Length == 0)
                 {
-                    Face[] faces = await faceServiceClient.DetectAsync(imageFileStream, returnFaceId: true, returnFaceLandmarks: false, returnFaceAttributes: faceAttributes);
-                    return faces;
+                    using (Stream imageFileStream = File.OpenRead(imageFilePath))
+                        faces = await faceServiceClient.DetectAsync(imageFileStream, returnFaceId: true, returnFaceLandmarks: false, returnFaceAttributes: faceAttributes);
+                       
+                    
                 }
+                return faces;
             }
-            // Catch and display Face API errors.
+            
             catch (FaceAPIException f)
-            {
-                //MessageBox.Show(f.ErrorMessage, f.ErrorCode);
+            {   
                 return new Face[0];
             }
             // Catch and display all other errors.
             catch (Exception e)
             {
+                var msg = e.Message;
                 //MessageBox.Show(e.Message, "Error");
                 return new Face[0];
             }

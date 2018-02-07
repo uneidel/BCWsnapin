@@ -42,22 +42,32 @@ namespace BCWSnapin
 
         private async void Fsw_Created(object sender, FileSystemEventArgs e)
         {
+            if ((Path.GetExtension(e.FullPath).ToLower() != ".jpeg") && (Path.GetExtension(e.FullPath).ToLower() != ".jpg") && (Path.GetExtension(e.FullPath).ToLower() != ".png"))// || (Path.GetExtension(e.FullPath).ToLower() != ".jpg"))
+                return;
 
-           
-              var  fii = await new facehelper(apikey).ProcessFile(e.FullPath);
-            UpdateLabel(lbl_age,fii.GetFace().FaceAttributes.Age.ToString());
-            UpdateLabel(lbl_gender,fii.GetFace().FaceAttributes.Gender);
-            UpdateLabel(lbl_smile,String.Format("{0}%", fii.GetFace().FaceAttributes.Smile * 100));
-            UpdateLabel(lbl_moustache,String.Format("{0}%", fii.GetFace().FaceAttributes.FacialHair.Moustache * 100));
-            UpdateLabel(lbl_haircolor,(fii.GetFace().FaceAttributes.Hair.HairColor.MaxBy(x => x.Confidence)).Color.ToString());
-            UpdateLabel(lbl_glasses,fii.GetFace().FaceAttributes.Glasses.ToString());
-            UpdateLabel(lbl_faceid,fii.GetFace().FaceId.ToString());
-            
-            FaceBox.Invoke((MethodInvoker)delegate
+            var  fii = await new facehelper(apikey).ProcessFile(e.FullPath);
+            try
             {
-                FaceBox.InitialImage = null;
-                FaceBox.Image = fii.GetImage();
-                
+                UpdateLabel(lbl_age, fii.GetFace().FaceAttributes.Age.ToString());
+                UpdateLabel(lbl_gender, fii.GetFace().FaceAttributes.Gender);
+                UpdateLabel(lbl_smile, String.Format("{0}%", fii.GetFace().FaceAttributes.Smile * 100));
+                UpdateLabel(lbl_moustache, String.Format("{0}%", fii.GetFace().FaceAttributes.FacialHair.Moustache * 100));
+                try
+                {
+                    UpdateLabel(lbl_haircolor, (fii.GetFace().FaceAttributes.Hair.HairColor.MaxBy(x => x.Confidence)).Color.ToString());
+                }
+                catch
+                {
+                    string message = "Person is wearing a hat.";
+                }
+                UpdateLabel(lbl_glasses, fii.GetFace().FaceAttributes.Glasses.ToString());
+                UpdateLabel(lbl_faceid, fii.GetFace().FaceId.ToString());
+
+                FaceBox.Invoke((MethodInvoker)delegate
+                {
+                    FaceBox.InitialImage = null;
+                    FaceBox.Image = fii.GetImage();
+
                 /*
                 FaceBox.Paint += new PaintEventHandler(delegate (Object o, PaintEventArgs ea)
                 {
@@ -65,8 +75,12 @@ namespace BCWSnapin
                     ((PaintEventArgs)ea).Graphics.DrawRectangle(new Pen(Color.Red), fii.GetFaceRect());
                 });
                 */
-            });
-            
+                });
+            }
+            catch(Exception ex)
+            {
+                var exmessage = ex.Message;
+            }
         }
         private void UpdateLabel(Label lbl, string val)
         {
