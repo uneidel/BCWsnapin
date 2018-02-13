@@ -44,11 +44,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             ((System.ComponentModel.ISupportInitialize)(this.FaceBox)).BeginInit();
             this.panel1.SuspendLayout();
-            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // FaceBox
@@ -58,7 +55,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.FaceBox.Location = new System.Drawing.Point(15, 12);
             this.FaceBox.Name = "FaceBox";
-            this.FaceBox.Size = new System.Drawing.Size(964, 754);
+            this.FaceBox.Size = new System.Drawing.Size(964, 709);
             this.FaceBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.FaceBox.TabIndex = 0;
             this.FaceBox.TabStop = false;
@@ -95,7 +92,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(15, 714);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(964, 250);
+            this.panel1.Size = new System.Drawing.Size(964, 200);
             this.panel1.TabIndex = 2;
             // 
             // label8
@@ -222,28 +219,11 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Age: ";
             // 
-            // statusStrip1
-            // 
-            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 968);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(988, 24);
-            this.statusStrip1.TabIndex = 3;
-            this.statusStrip1.Text = "statusStrip1";
-            // 
-            // toolStripStatusLabel1
-            // 
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(0, 19);
-            // 
             // BCWSnapin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(988, 992);
-            this.Controls.Add(this.statusStrip1);
+            this.ClientSize = new System.Drawing.Size(988, 947);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.FaceBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
@@ -252,10 +232,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.FaceBox)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.statusStrip1.ResumeLayout(false);
-            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -277,8 +254,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label lbl_faceid;
-        private System.Windows.Forms.StatusStrip statusStrip1;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
     }
 }
 

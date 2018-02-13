@@ -62,7 +62,7 @@ namespace BCWSnapin
                 catch
                 {
                     string message = "Person is wearing a hat.";
-                    toolStripStatusLabel1.Text = message;
+                   
                 }
                 UpdateLabel(lbl_glasses, fii.GetFace().FaceAttributes.Glasses.ToString());
                 UpdateLabel(lbl_faceid, fii.GetFace().FaceId.ToString());
@@ -73,12 +73,12 @@ namespace BCWSnapin
                     FaceBox.Image = fii.GetImage();
 
                 });
-                toolStripStatusLabel1.Text = "Done.";
+                
             }
             catch(Exception ex)
             {
                 var exmessage = ex.StackTrace;
-                toolStripStatusLabel1.Text = exmessage;
+               
             }
         }
         
