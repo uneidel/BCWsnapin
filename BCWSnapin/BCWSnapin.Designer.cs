@@ -31,21 +31,24 @@
             this.FaceBox = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.lbl_gender = new System.Windows.Forms.Label();
-            this.lbl_age = new System.Windows.Forms.Label();
-            this.lbl_smile = new System.Windows.Forms.Label();
-            this.lbl_haircolor = new System.Windows.Forms.Label();
-            this.lbl_glasses = new System.Windows.Forms.Label();
-            this.lbl_moustache = new System.Windows.Forms.Label();
-            this.lbl_faceid = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.lbl_faceid = new System.Windows.Forms.Label();
+            this.lbl_moustache = new System.Windows.Forms.Label();
+            this.lbl_glasses = new System.Windows.Forms.Label();
+            this.lbl_haircolor = new System.Windows.Forms.Label();
+            this.lbl_smile = new System.Windows.Forms.Label();
+            this.lbl_age = new System.Windows.Forms.Label();
+            this.lbl_gender = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             ((System.ComponentModel.ISupportInitialize)(this.FaceBox)).BeginInit();
             this.panel1.SuspendLayout();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // FaceBox
@@ -55,7 +58,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.FaceBox.Location = new System.Drawing.Point(15, 12);
             this.FaceBox.Name = "FaceBox";
-            this.FaceBox.Size = new System.Drawing.Size(918, 682);
+            this.FaceBox.Size = new System.Drawing.Size(964, 754);
             this.FaceBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.FaceBox.TabIndex = 0;
             this.FaceBox.TabStop = false;
@@ -92,122 +95,8 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(15, 714);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(918, 194);
+            this.panel1.Size = new System.Drawing.Size(964, 250);
             this.panel1.TabIndex = 2;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(19, 61);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 32);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Age: ";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(19, 111);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(100, 32);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Smiling:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(352, 13);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(120, 32);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "HairColor:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(352, 61);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(97, 32);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "Glasses:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(352, 111);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(138, 32);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "Moustache:";
-            // 
-            // lbl_gender
-            // 
-            this.lbl_gender.AutoSize = true;
-            this.lbl_gender.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_gender.Location = new System.Drawing.Point(123, 13);
-            this.lbl_gender.Name = "lbl_gender";
-            this.lbl_gender.Size = new System.Drawing.Size(0, 32);
-            this.lbl_gender.TabIndex = 7;
-            // 
-            // lbl_age
-            // 
-            this.lbl_age.AutoSize = true;
-            this.lbl_age.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_age.Location = new System.Drawing.Point(123, 61);
-            this.lbl_age.Name = "lbl_age";
-            this.lbl_age.Size = new System.Drawing.Size(0, 32);
-            this.lbl_age.TabIndex = 8;
-            // 
-            // lbl_smile
-            // 
-            this.lbl_smile.AutoSize = true;
-            this.lbl_smile.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_smile.Location = new System.Drawing.Point(125, 111);
-            this.lbl_smile.Name = "lbl_smile";
-            this.lbl_smile.Size = new System.Drawing.Size(0, 32);
-            this.lbl_smile.TabIndex = 9;
-            // 
-            // lbl_haircolor
-            // 
-            this.lbl_haircolor.AutoSize = true;
-            this.lbl_haircolor.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_haircolor.Location = new System.Drawing.Point(500, 13);
-            this.lbl_haircolor.Name = "lbl_haircolor";
-            this.lbl_haircolor.Size = new System.Drawing.Size(0, 32);
-            this.lbl_haircolor.TabIndex = 10;
-            // 
-            // lbl_glasses
-            // 
-            this.lbl_glasses.AutoSize = true;
-            this.lbl_glasses.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_glasses.Location = new System.Drawing.Point(500, 61);
-            this.lbl_glasses.Name = "lbl_glasses";
-            this.lbl_glasses.Size = new System.Drawing.Size(0, 32);
-            this.lbl_glasses.TabIndex = 11;
-            // 
-            // lbl_moustache
-            // 
-            this.lbl_moustache.AutoSize = true;
-            this.lbl_moustache.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_moustache.Location = new System.Drawing.Point(500, 111);
-            this.lbl_moustache.Name = "lbl_moustache";
-            this.lbl_moustache.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lbl_moustache.Size = new System.Drawing.Size(0, 32);
-            this.lbl_moustache.TabIndex = 12;
-            // 
-            // lbl_faceid
-            // 
-            this.lbl_faceid.AutoSize = true;
-            this.lbl_faceid.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_faceid.Location = new System.Drawing.Point(113, 162);
-            this.lbl_faceid.Name = "lbl_faceid";
-            this.lbl_faceid.Size = new System.Drawing.Size(0, 32);
-            this.lbl_faceid.TabIndex = 13;
             // 
             // label8
             // 
@@ -219,11 +108,142 @@
             this.label8.TabIndex = 14;
             this.label8.Text = "FaceId:";
             // 
+            // lbl_faceid
+            // 
+            this.lbl_faceid.AutoSize = true;
+            this.lbl_faceid.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_faceid.Location = new System.Drawing.Point(113, 162);
+            this.lbl_faceid.Name = "lbl_faceid";
+            this.lbl_faceid.Size = new System.Drawing.Size(0, 32);
+            this.lbl_faceid.TabIndex = 13;
+            // 
+            // lbl_moustache
+            // 
+            this.lbl_moustache.AutoSize = true;
+            this.lbl_moustache.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_moustache.Location = new System.Drawing.Point(500, 111);
+            this.lbl_moustache.Name = "lbl_moustache";
+            this.lbl_moustache.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lbl_moustache.Size = new System.Drawing.Size(0, 32);
+            this.lbl_moustache.TabIndex = 12;
+            // 
+            // lbl_glasses
+            // 
+            this.lbl_glasses.AutoSize = true;
+            this.lbl_glasses.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_glasses.Location = new System.Drawing.Point(500, 61);
+            this.lbl_glasses.Name = "lbl_glasses";
+            this.lbl_glasses.Size = new System.Drawing.Size(0, 32);
+            this.lbl_glasses.TabIndex = 11;
+            // 
+            // lbl_haircolor
+            // 
+            this.lbl_haircolor.AutoSize = true;
+            this.lbl_haircolor.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_haircolor.Location = new System.Drawing.Point(500, 13);
+            this.lbl_haircolor.Name = "lbl_haircolor";
+            this.lbl_haircolor.Size = new System.Drawing.Size(0, 32);
+            this.lbl_haircolor.TabIndex = 10;
+            // 
+            // lbl_smile
+            // 
+            this.lbl_smile.AutoSize = true;
+            this.lbl_smile.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_smile.Location = new System.Drawing.Point(125, 111);
+            this.lbl_smile.Name = "lbl_smile";
+            this.lbl_smile.Size = new System.Drawing.Size(0, 32);
+            this.lbl_smile.TabIndex = 9;
+            // 
+            // lbl_age
+            // 
+            this.lbl_age.AutoSize = true;
+            this.lbl_age.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_age.Location = new System.Drawing.Point(123, 61);
+            this.lbl_age.Name = "lbl_age";
+            this.lbl_age.Size = new System.Drawing.Size(0, 32);
+            this.lbl_age.TabIndex = 8;
+            // 
+            // lbl_gender
+            // 
+            this.lbl_gender.AutoSize = true;
+            this.lbl_gender.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_gender.Location = new System.Drawing.Point(123, 13);
+            this.lbl_gender.Name = "lbl_gender";
+            this.lbl_gender.Size = new System.Drawing.Size(0, 32);
+            this.lbl_gender.TabIndex = 7;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(352, 111);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(138, 32);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "Moustache:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(352, 61);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(97, 32);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "Glasses:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(352, 13);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(120, 32);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "HairColor:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(19, 111);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(100, 32);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Smiling:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(19, 61);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(69, 32);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Age: ";
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 968);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(988, 24);
+            this.statusStrip1.TabIndex = 3;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(0, 19);
+            // 
             // BCWSnapin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(942, 920);
+            this.ClientSize = new System.Drawing.Size(988, 992);
+            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.FaceBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
@@ -232,7 +252,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.FaceBox)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -254,6 +277,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label lbl_faceid;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
     }
 }
 
