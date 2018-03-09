@@ -155,7 +155,7 @@
             // 
             this.lbl_age.AutoSize = true;
             this.lbl_age.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_age.Location = new System.Drawing.Point(123, 61);
+            this.lbl_age.Location = new System.Drawing.Point(251, 61);
             this.lbl_age.Name = "lbl_age";
             this.lbl_age.Size = new System.Drawing.Size(0, 32);
             this.lbl_age.TabIndex = 8;
@@ -215,9 +215,9 @@
             this.label2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(19, 61);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 32);
+            this.label2.Size = new System.Drawing.Size(232, 32);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Age: ";
+            this.label2.Text = "Years of Experience: ";
             // 
             // BCWSnapin
             // 
